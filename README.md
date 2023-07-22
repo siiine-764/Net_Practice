@@ -220,9 +220,6 @@ Here are all the solutions and explanations for all 10 Levels.<br>
   The fixed IP of A is `67.52.110.132`.<br>
   This results in an available IP-range of `67.52.110.129 - 67.52.110.142`.
 
-
-  [back to contents](https://github.com/tblaase/Net_Practice#contents)
-
 </details>
 
 ---
@@ -231,20 +228,18 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 <details>
   <summary>show</summary>
-
-  ![Level 5](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_5.png)<br>
+  <img width="100%" alt="Level_5" src="https://github.com/siiine-764/Net_Practice/assets/80540449/e3273af4-c3c4-40be-a478-e71f7c62fa14">
+  <br>
   Here we first come by the mighty routing table.<br>
   R1 has a fixed IP of `80.103.79.126` and a fixed mask of `255.255.255.128`, which results in a mask of `255.255.255.128` and an IP-range of `80.103.79.1 - 80.103.79.125` for A1.
+
 
 
   Now to conquer the routing table of A it is as easy as setting the **destination** as `default` or `0.0.0.0/0` and the destination has to be the IP of the directly connected router R1, `80.103.79.126`.<br>
 
 
   Same concept applies to connecting B to the R2.
-
-
-  [back to contents](https://github.com/tblaase/Net_Practice#contents)
-
+  
 </details>
 
 ---
@@ -254,7 +249,8 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 <details>
   <summary>show</summary>
 
-  ![Level 6](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_6.png)<br>
+  <img width="1286" alt="Level_6" src="https://github.com/siiine-764/Net_Practice/assets/80540449/d87e880a-178b-4088-bb46-f8afe1636b18">
+  <br>
   This level introduces us to the Internet.<br>
   We again start by looking at the fixed IP-addresses and masks.
 
@@ -275,9 +271,6 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
   **Destination** of the routing table of the router can be set to `default` or `0.0.0.0/0`.
 
-
-  [back to contents](https://github.com/tblaase/Net_Practice#contents)
-
 </details>
 
 ---
@@ -287,13 +280,14 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 <details>
   <summary>show</summary>
 
-  ![Level 7](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_7.png)<br>
+  <img width="1383" alt="Level_7" src="https://github.com/siiine-764/Net_Practice/assets/80540449/b785dcc6-efee-42fa-b202-ba1b4ea06210">
+  <br>
   Level 7 is pretty straightforward and not too complicated, you just need to make sure that no networks overlap with each other.
 
 
   The first goal will be to find an appropriate mask to use.<br>
-  Since we will need 3 different subnets, by looking at the [table](https://github.com/tblaase/Net_Practice#masks) you will be able to decide which mask will be required.<br>
-  I did choose `255.255.255.252` or in CIDR `/30` as my mask because it provides me with subnets, each having 2 usable IP-addresses.<br>
+  Since we will need 3 different subnets, by looking at the [table](https://github.com/siine-764/Net_Practice#masks) you will be able to decide which mask will be required.<br>
+  I did choose `255.255.255.252` or in CIDR `/30` <a href="https://www.cloudaccess.net/cloud-control-panel-ccp/157-dns-management/322-subnet-masks-reference-table.html"> for more </a> as my mask because it provides me with subnets, each having 2 usable IP-addresses.<br>
   Now you just need to fill in all the correct IP's in order to create the 3 networks:
 
 
@@ -301,19 +295,18 @@ Here are all the solutions and explanations for all 10 Levels.<br>
   - R12 R21 (network range of `107.198.14.252 - 107.198.14.255`)
   - R22 C1 (I did choose a network range of `107.198.14.4 - 107.198.14.7`)
 
-
-  [back to contents](https://github.com/tblaase/Net_Practice#contents)
-
 </details>
 
 ---
+
 
 ### Level 8
 
 <details>
   <summary>show</summary>
 
-  ![Level 8](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_8.png)<br>
+  <img width="1274" alt="Level_8" src="https://github.com/siiine-764/Net_Practice/assets/80540449/a82d4172-1de9-4646-86b3-65924a4da542">
+  <br>
   Level 8 now will be a little tricky because you really need to be aware of overlapping networks.
 
 
@@ -346,9 +339,6 @@ Here are all the solutions and explanations for all 10 Levels.<br>
   To make it more sensible, the destination needs to be set to a value that leads to R2 and can go either way, to D1 and to C1.<br>
   Because we used the lowest two IP-ranges for the two target networks, that need to be reached, the **destination** will be `141.195.172.0/27` the IP adress is of the network, that we want to reach and the CIDR will just define that the first 27 bits of the IP have to be `141.195.172`, so it will be able to communicate with IP's ranging from `141.195.172.0` to `141.195.172.255`.
 
-
-  [back to contents](https://github.com/tblaase/Net_Practice#contents)
-
 </details>
 
 ---
@@ -358,7 +348,8 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 <details>
   <summary>show</summary>
 
-  ![Level 9](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_9.png)<br>
+  <img width="1202" alt="Level_9" src="https://github.com/siiine-764/Net_Practice/assets/80540449/02788c38-03a8-479e-b2f6-a4e149eafa23">
+  <br>
   In Level 9 we encounter another weakness of the project. The router is not doing any IP-translation when a computer reaches out to the internet.<br>
   This can be seen by trying to connect C to the internet.
 
@@ -370,7 +361,8 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 
   If you now hit the `check again` button, it will show you `Goal 6 : cation need to communicate with Internet - Status : KO - No reverse way, try again ...` for this demonstration we will just ignore all of the other goals.<br>
-  Now you can see at the small red box at the bottom right corner:
+  Now you can see at the small red box at the 
+bottom right corner:
 
   ```
   ******* Goal ID 6 ********
@@ -421,7 +413,7 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
   Now, if we didn't forget anything, all that should be left, is to fix the routing table of R1.<br>
   For this you need the network-address of the R23-D1 network.<br>
-  You can find this with the same logic, as before by just extending the [table](https://github.com/tblaase/Net_Practice#masks) above.<br>
+  You can find this with the same logic, as before by just extending the [table](https://github.com/siine-764/Net_Practice#masks) above.<br>
   With this you will be able to find out that the mask `/18` divides our IP-range into 4 subnets:
 
 
@@ -433,9 +425,6 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 Our fixed IP is part of `63.239.64.0 - 63.239.127.255`, so the network-address is `63.239.64.0`, combine this with our mask of `/18` and you have the missing **destination** of our routing table, `63.239.64.0/18`.
 
-
-[back to contents](https://github.com/tblaase/Net_Practice#contents)
-
 </details>
 
 ---
@@ -444,10 +433,9 @@ Our fixed IP is part of `63.239.64.0 - 63.239.127.255`, so the network-address i
 
 <details>
   <summary>show</summary>
-
-
-  ![Level 10](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_10.png)
-
+  <img width="1241" alt="Level_10" src="https://github.com/siiine-764/Net_Practice/assets/80540449/60c92079-f284-471c-b3dc-db8f27961caf">
+  <br>
+  
   The easiest part will be the connection of H2 and H1 in their network.<br>
   The mask of this network is fixed by R11, set the masks of H21 and H11 accordingly.<br>
   Set the IP of H21 to match the rest of the network, it can be in the range of `158.103.36.3 - 158.103.36.126`.<br>
@@ -479,9 +467,6 @@ Our fixed IP is part of `63.239.64.0 - 63.239.127.255`, so the network-address i
   Lastly, for the routing table of R1 we need the network-address of the R22-H31 network, which in my case is `150.152.40.192/` and it's mask, which is `/30`, set the **destination** accordingly.<br>
 
 </details>
-
-
-[back to contents](https://github.com/tblaase/Net_Practice#contents)
 
 
 
