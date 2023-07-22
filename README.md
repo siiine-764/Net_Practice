@@ -9,17 +9,17 @@
   - [Routing Tables](https://github.com/siiine-764/Net_Practice#routing-tables)
   - [Network](https://github.com/siiine-764/Net_Practice#network)
     
-<!--p>- [Levels](https://github.com/tblaase/Net_Practice#levels)
-  - [Level 1](https://github.com/tblaase/Net_Practice#level-1)
-  - [Level 2](https://github.com/tblaase/Net_Practice#level-2)
-  - [Level 3](https://github.com/tblaase/Net_Practice#level-3)
-  - [Level 4](https://github.com/tblaase/Net_Practice#level-4)
-  - [Level 5](https://github.com/tblaase/Net_Practice#level-5)
-  - [Level 6](https://github.com/tblaase/Net_Practice#level-6)
-  - [Level 7](https://github.com/tblaase/Net_Practice#level-7)
-  - [Level 8](https://github.com/tblaase/Net_Practice#level-8)
-  - [Level 9](https://github.com/tblaase/Net_Practice#level-9)
-  - [Level 10](https://github.com/tblaase/Net_Practice#level-10) </p-->
+- [Levels](https://github.com/siiine-764/Net_Practice#levels)
+  - [Level 1](https://github.com/siiine-764/Net_Practice#level-1)
+  - [Level 2](https://github.com/siiine-764/Net_Practice#level-2)
+  - [Level 3](https://github.com/siiine-764/Net_Practice#level-3)
+  - [Level 4](https://github.com/siiine-764/Net_Practice#level-4)
+  - [Level 5](https://github.com/siiine-764/Net_Practice#level-5)
+  - [Level 6](https://github.com/siiine-764/Net_Practice#level-6)
+  - [Level 7](https://github.com/siiine-764/Net_Practice#level-7)
+  - [Level 8](https://github.com/siiine-764/Net_Practice#level-8)
+  - [Level 9](https://github.com/siiine-764/Net_Practice#level-9)
+  - [Level 10](https://github.com/siiine-764/Net_Practice#level-10)
 
 
 ## Basics
@@ -50,9 +50,6 @@ and `255.255.128.128` is **not** a valid mask.<br>
 <br>
 In order to have the ability to send packages between two IP-addresses they either need to be part of the same network or they need to be connected by a router which is part of both subnets.
 
-
-[back to contents](https://github.com/tblaase/Net_Practice#contents)
-
 ## Special IP-ranges
 
 The following special address-ranges are reserved for Private Networks:<br>
@@ -66,8 +63,7 @@ The following address-range is reserved for so called loopback addresses:<br>
 
 There is some more special ip-ranges, but for this project, you only need to remember those above.
 
-
-[back to contents](https://github.com/tblaase/Net_Practice#contents)
+![website for check IPs](https://www.ipqualityscore.com/ip-reputation-check) <br>
 
 ## Masks
 
@@ -101,37 +97,38 @@ network: `190.3.2.252`<br>
 broadcast: `190.3.2.255`<br>
 usable IP's: `190.3.2.253`, `190.3.2.254`
 
-
-[back to contents](https://github.com/tblaase/Net_Practice#contents)
-
 ## Switches
 
 A switch will enable you to connect more than two devices to the same network.<br>
 Its only purpose is to distribute packages to its network.<br>
-To see a working example, you can take a look at [Level 3](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_3.png).<br>
+To see a working example, you can take a look at <br>
+<img width="100%" alt="Level_3" src="https://github.com/siiine-764/Net_Practice/assets/80540449/7041b06d-2dc8-454b-b91d-528dac56fb18">
 
 ## Routers
-
+(rule routers : control workflow between tasks in a process)
 As previously mentioned a router is an interface which enables communication between different networks.<br>
 A router has the ability to be part of multiple networks, in Netpractice this is visualized by the so called `Interface`.<br>
 If routers and switches are still magic to you, I suggest looking deeper [into it](https://www.youtube.com/watch?v=Vc16CCAAz7Q) yourself, as their basic understanding is crucial to succeed in this project.
 
-
-[back to contents](https://github.com/tblaase/Net_Practice#contents)
-
 ## Routing Table
 
+<img width="100%" alt="router_example" src="https://github.com/siiine-764/Net_Practice/assets/80540449/c99b537b-b386-4a52-bc0b-e68817dbd1e6">
+- Routing Table on Windows:
 
-![example_router](https://github.com/tblaase/Net_Practice/blob/main/readme_additions/router_example.png)
+cmd on windows:
 
+    Get-NetRoute -AddressFamily IPv6
+
+cmd on Mac:
+
+    netstat -rn
+
+![Screenshot 2023-07-22 181953](https://github.com/siiine-764/Net_Practice/assets/80540449/98532641-bf77-4139-beb9-d1ba0148f43c)
 
 The routing table is there to store all the different paths to all the networks, the device is part of.<br>
 In Net_Practice the routing table consists of two elements, the **destination** and the **next hop**<br>
 The **destination** consists of the network-address that you want to send a package to, combined with the CIDR of that network: `190.3.2.252/30`. If you don't want to specify a destination, you can just set it to `default` or `0.0.0.0/0`.<br>
 The **next hop** is the address of the next router that you need to send the packages to in order to reach the destination-network.<br>
-
-
-[back to contents](https://github.com/tblaase/Net_Practice#contents)
 
 ## Network
 
@@ -153,9 +150,6 @@ Now you just combine the two bit by bit, if both bits are a `1` the correspondin
 By doing that to the mentioned example, you should get the network-address of<br>`11000000.10101000.1100100.00000000` in binary or `192.168.100.0` in dot-decimal.<br>
 If two devices share the same network-address, they are part of the same network and communication is ensured.
 
-
-[back to contents](https://github.com/tblaase/Net_Practice#contents)
-
 ## Levels
 
 Here are all the solutions and explanations for all 10 Levels.<br>
@@ -167,14 +161,12 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 <details>
   <summary>show</summary>
 
-  ![Level 1](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_1.png)<br>
+<img width="100%" alt="Level_1" src="https://github.com/siiine-764/Net_Practice/assets/80540449/16e5d7ca-f894-4c23-bbb2-d323f03cb9f1">
+  <br>
   Here we have two separate networks, each consisting of two computers.<br>
   In order to make it work, the two computers need to be part of the same network.<br>
   Because the mask of A and B is `255.255.255.0` the possible IP-adresses of A1 are <br>`104.99.23.1 - 104.99.23.254`.<br>
   For C and D the mask is `255.255.0.0`, so the usable IPs are `211.191.0.1 - 211.191.255.254`
-
-
-  [back to contents](https://github.com/tblaase/Net_Practice#contents)
 
 </details>
 
@@ -184,8 +176,9 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 <details>
   <summary>show</summary>
-
-  ![Level 2](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_2.png)<br>
+  
+<img width="100%" alt="Level_2" src="https://github.com/siiine-764/Net_Practice/assets/80540449/516925a2-a253-4a5d-ac55-04c6c9d460d4">
+  <br>
   Here we have two separate networks again, but this time we need to set the mask and IP correctly.<br>
   For the network of A and B, they need the same mask, `255.255.255.224`.<br>
   The available IP-addresses for A1 are `192.168.57.193 - 192.168.57.221`.<br>
@@ -193,10 +186,7 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
   Network C and D already have the same mask. so they just need addresses that are part of the same subnet.<br>
   In the case of the mask being `/30` the subnet only consists of 2 available addresses per subnet. So be careful, to choose the correct ones. to make things easier, I suggest you either start with the lowest or highest subnet.<br>
-  I choose the highest, so my available IP-range is `192.168.57.253 - 192.168.57.254`
-
-
-  [back to contents](https://github.com/tblaase/Net_Practice#contents)
+  I choose the highest, so my available IP-range is `192.168.57.253 - 192.168.57.254
 
 </details>
 
@@ -206,14 +196,11 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 <details>
   <summary>show</summary>
-
-  ![Level 3](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_3.png)<br>
-  In this level we have our first encounter with a [Switch](https://github.com/tblaase/Net_Practice#switches).<br>
+  <img width="1069" alt="Level_3" src="https://github.com/siiine-764/Net_Practice/assets/80540449/cfeefa2e-b260-430a-8d31-29424bbc8297">
+  <br>
+  In this level we have our first encounter with a <a> </a>.<br>
   Since we can't manipulate the mask of C, `255.255.255.128` will be the mask of the whole network.<br>
   A has a fix IP, so the whole networks range will be `104.198.187.1 - 104.198.187.126`.
-
-
-  [back to contents](https://github.com/tblaase/Net_Practice#contents)
 
 </details>
 
@@ -221,13 +208,15 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 ### Level 4
 
+
 <details>
   <summary>show</summary>
-
-  ![Level 4](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_4.png)<br>
+  <img width="1166" alt="Level_4" src="https://github.com/siiine-764/Net_Practice/assets/80540449/c94a19ff-db75-431f-8193-56ee0dce17b6">
+  <br>
   This is our first time running into a router, since the router does not connect to anything else, there is no routing table, that needs to be worked with.<br>
   A has a fixed IP, so this will define the IP of our network.<br>
-  You can freely choose a fitting mask for the network, but the subnet has to have at least 3 usable IP-addresses, <br> so choosing `255.255.255.240`/`/28` will create a subnet of 14 usable addresses.<br>
+  You can freely choose a
+ fitting mask for the network, but the subnet has to have at least 3 usable IP-addresses, <br> so choosing `255.255.255.240`/`/28` will create a subnet of 14 usable addresses.<br>
   The fixed IP of A is `67.52.110.132`.<br>
   This results in an available IP-range of `67.52.110.129 - 67.52.110.142`.
 
