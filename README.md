@@ -97,6 +97,18 @@ network: `190.3.2.252`<br>
 broadcast: `190.3.2.255`<br>
 usable IP's: `190.3.2.253`, `190.3.2.254`
 
+- Why does IPv4 need a netmask?
+
+    - Improved Network Security.
+  
+    - Better Network Performance and Speed.
+  
+    - Administration is a Breeze.
+  
+    - Easier to Control Growth of Network.
+  
+    - Less Network Congestion.
+
 ## Switches
 
 A switch will enable you to connect more than two devices to the same network.<br>
