@@ -483,6 +483,9 @@ Our fixed IP is part of `63.239.64.0 - 63.239.127.255`, so the network-address i
 </details>
 
 
+## Explanation :
+
+https://miro.com/app/board/uXjVMoh8dFU=/
 
 
 
