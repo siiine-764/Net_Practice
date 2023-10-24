@@ -20,6 +20,8 @@
   - [Level 8](https://github.com/siiine-764/Net_Practice#level-8)
   - [Level 9](https://github.com/siiine-764/Net_Practice#level-9)
   - [Level 10](https://github.com/siiine-764/Net_Practice#level-10)
+ 
+- [Explanation](https://github.com/siiine-764/Net_Practice#Explanation)
 
 
 ## Basics
@@ -483,7 +485,7 @@ Our fixed IP is part of `63.239.64.0 - 63.239.127.255`, so the network-address i
 </details>
 
 
-## Explanation :
+### Explanation :
 
 https://miro.com/app/board/uXjVMoh8dFU=/
 
