@@ -97,6 +97,8 @@ network: `190.3.2.252`<br>
 broadcast: `190.3.2.255`<br>
 usable IP's: `190.3.2.253`, `190.3.2.254`
 
+![subnet-mask-catharsis](https://github.com/siiine-764/Net_Practice/assets/80540449/62e68023-7584-4149-b8e4-0ef30b694752)
+
 - Why does IPv4 need a netmask?
 
     - Improved Network Security.
