@@ -487,6 +487,13 @@ Our fixed IP is part of `63.239.64.0 - 63.239.127.255`, so the network-address i
 
 https://miro.com/app/board/uXjVMoh8dFU=/
 
+# Playlist :
+
+https://www.youtube.com/watch?v=5WfiTHiU4x8&list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF
+
+# Practice : 
+
+https://subnetipv4.com/#learn
 
 
 
