@@ -1,4 +1,5 @@
 # Net_Practice
+![NetPractice](https://github.com/siiine-764/Net_Practice/assets/80540449/4d902fe8-d2fe-4216-86ce-95f973eae53a)
 
 ## Contents
 - [Basics](https://github.com/siiine-764/Net_Practice#basics)
