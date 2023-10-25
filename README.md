@@ -270,7 +270,7 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 <details>
   <summary>show</summary>
-  <img width="1241" alt="Level_10" src="https://github.com/siiine-764/Net_Practice/assets/80540449/60c92079-f284-471c-b3dc-db8f27961caf">
+  <img width="1347" alt="level10" src="https://github.com/siiine-764/Net_Practice/assets/80540449/3d40c8e2-43bb-4744-a60f-b7328186398c">
   <br>
 </details>
 
