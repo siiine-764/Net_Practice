@@ -177,14 +177,8 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 <details>
   <summary>show</summary>
-
-<img width="100%" alt="Level_1" src="https://github.com/siiine-764/Net_Practice/assets/80540449/16e5d7ca-f894-4c23-bbb2-d323f03cb9f1">
+<img width="100%" alt="level1" src="https://github.com/siiine-764/Net_Practice/assets/80540449/62777f3a-225e-447a-8a28-ef3a513f4c13">
   <br>
-  Here we have two separate networks, each consisting of two computers.<br>
-  In order to make it work, the two computers need to be part of the same network.<br>
-  Because the mask of A and B is `255.255.255.0` the possible IP-adresses of A1 are <br>`104.99.23.1 - 104.99.23.254`.<br>
-  For C and D the mask is `255.255.0.0`, so the usable IPs are `211.191.0.1 - 211.191.255.254`
-
 </details>
 
 ---
@@ -193,18 +187,8 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 <details>
   <summary>show</summary>
-  
-<img width="100%" alt="Level_2" src="https://github.com/siiine-764/Net_Practice/assets/80540449/516925a2-a253-4a5d-ac55-04c6c9d460d4">
+  <img width="100%" alt="level2" src="https://github.com/siiine-764/Net_Practice/assets/80540449/9350781a-eecc-4c1c-ae7c-db2524389309">
   <br>
-  Here we have two separate networks again, but this time we need to set the mask and IP correctly.<br>
-  For the network of A and B, they need the same mask, `255.255.255.224`.<br>
-  The available IP-addresses for A1 are `192.168.57.193 - 192.168.57.221`.<br>
-
-
-  Network C and D already have the same mask. so they just need addresses that are part of the same subnet.<br>
-  In the case of the mask being `/30` the subnet only consists of 2 available addresses per subnet. So be careful, to choose the correct ones. to make things easier, I suggest you either start with the lowest or highest subnet.<br>
-  I choose the highest, so my available IP-range is `192.168.57.253 - 192.168.57.254
-
 </details>
 
 ---
@@ -213,12 +197,8 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 <details>
   <summary>show</summary>
-  <img width="1069" alt="Level_3" src="https://github.com/siiine-764/Net_Practice/assets/80540449/cfeefa2e-b260-430a-8d31-29424bbc8297">
+  <img width="100%" alt="level3" src="https://github.com/siiine-764/Net_Practice/assets/80540449/96308c9f-ac62-438d-88a5-fe8659182225">
   <br>
-  In this level we have our first encounter with a <a> </a>.<br>
-  Since we can't manipulate the mask of C, `255.255.255.128` will be the mask of the whole network.<br>
-  A has a fix IP, so the whole networks range will be `104.198.187.1 - 104.198.187.126`.
-
 </details>
 
 ---
@@ -228,15 +208,8 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 <details>
   <summary>show</summary>
-  <img width="1166" alt="Level_4" src="https://github.com/siiine-764/Net_Practice/assets/80540449/c94a19ff-db75-431f-8193-56ee0dce17b6">
+  <img width="100%" alt="level4" src="https://github.com/siiine-764/Net_Practice/assets/80540449/cb2ec85a-6186-4a0c-bf0a-f93ea4300b8b">
   <br>
-  This is our first time running into a router, since the router does not connect to anything else, there is no routing table, that needs to be worked with.<br>
-  A has a fixed IP, so this will define the IP of our network.<br>
-  You can freely choose a
- fitting mask for the network, but the subnet has to have at least 3 usable IP-addresses, <br> so choosing `255.255.255.240`/`/28` will create a subnet of 14 usable addresses.<br>
-  The fixed IP of A is `67.52.110.132`.<br>
-  This results in an available IP-range of `67.52.110.129 - 67.52.110.142`.
-
 </details>
 
 ---
@@ -245,18 +218,8 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 <details>
   <summary>show</summary>
-  <img width="100%" alt="Level_5" src="https://github.com/siiine-764/Net_Practice/assets/80540449/e3273af4-c3c4-40be-a478-e71f7c62fa14">
+  <img width="100%" alt="level5" src="https://github.com/siiine-764/Net_Practice/assets/80540449/fb248687-4a69-4950-8721-47a10c24efc9">
   <br>
-  Here we first come by the mighty routing table.<br>
-  R1 has a fixed IP of `80.103.79.126` and a fixed mask of `255.255.255.128`, which results in a mask of `255.255.255.128` and an IP-range of `80.103.79.1 - 80.103.79.125` for A1.
-
-
-
-  Now to conquer the routing table of A it is as easy as setting the **destination** as `default` or `0.0.0.0/0` and the destination has to be the IP of the directly connected router R1, `80.103.79.126`.<br>
-
-
-  Same concept applies to connecting B to the R2.
-  
 </details>
 
 ---
@@ -265,29 +228,8 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 <details>
   <summary>show</summary>
-
-  <img width="1286" alt="Level_6" src="https://github.com/siiine-764/Net_Practice/assets/80540449/d87e880a-178b-4088-bb46-f8afe1636b18">
+  <img width="100%" alt="level6" src="https://github.com/siiine-764/Net_Practice/assets/80540449/5950a027-7073-450d-addd-7d2833124573">
   <br>
-  This level introduces us to the Internet.<br>
-  We again start by looking at the fixed IP-addresses and masks.
-
-
-  IP of A1 is fixed and the mask of R1, which A1 is connected to through the switch, is fixed as well.<br>
-  So we need to match those in order for them to be in the same network.<br>
-  Mask for this network will be `255.255.255.128` which then will result in 2 subnets.<br>
-  Combined with the fixed IP of `29.65.6.227` one subnet will be from `29.65.6.1` to `29.65.6.126` and the other <br>`29.65.6.129 - 29.65.6.254`.<br>
-  In order for R1 and A1 to be in the same network, the possible address-range of R1 will be `29.65.6.129 - 29.65.6.254`.
-
-
-  Now set the routing table of A in order to reach R1.
-
-
-  The **destination** of the routing table of the internet needs to be set to the network address of the R1-A1 network, which in this case is `29.65.6.128`, combined with the CIDR of the network, which is `/25`.<br>
-  This results in a **next hop** of `29.65.6.128/25`.
-
-
-  **Destination** of the routing table of the router can be set to `default` or `0.0.0.0/0`.
-
 </details>
 
 ---
@@ -296,22 +238,8 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 <details>
   <summary>show</summary>
-
-  <img width="1383" alt="Level_7" src="https://github.com/siiine-764/Net_Practice/assets/80540449/b785dcc6-efee-42fa-b202-ba1b4ea06210">
+<img width="100%" alt="level7" src="https://github.com/siiine-764/Net_Practice/assets/80540449/170a12fa-0c76-4302-8f71-5eed221b0032">
   <br>
-  Level 7 is pretty straightforward and not too complicated, you just need to make sure that no networks overlap with each other.
-
-
-  The first goal will be to find an appropriate mask to use.<br>
-  Since we will need 3 different subnets, by looking at the [table](https://github.com/siine-764/Net_Practice#masks) you will be able to decide which mask will be required.<br>
-  I did choose `255.255.255.252` or in CIDR `/30` <a href="https://www.cloudaccess.net/cloud-control-panel-ccp/157-dns-management/322-subnet-masks-reference-table.html"> for more </a> as my mask because it provides me with subnets, each having 2 usable IP-addresses.<br>
-  Now you just need to fill in all the correct IP's in order to create the 3 networks:
-
-
-  - A1 R11 (network range of `107.198.14.0 - 107.198.14.3`)
-  - R12 R21 (network range of `107.198.14.252 - 107.198.14.255`)
-  - R22 C1 (I did choose a network range of `107.198.14.4 - 107.198.14.7`)
-
 </details>
 
 ---
@@ -321,41 +249,8 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 <details>
   <summary>show</summary>
-
-  <img width="1274" alt="Level_8" src="https://github.com/siiine-764/Net_Practice/assets/80540449/a82d4172-1de9-4646-86b3-65924a4da542">
+  <img width="1508" alt="level8" src="https://github.com/siiine-764/Net_Practice/assets/80540449/0f59d9be-eca9-491b-9de1-6e9c3dbf2551">
   <br>
-  Level 8 now will be a little tricky because you really need to be aware of overlapping networks.
-
-
-  The first thing we can solve is the connection between R13 and R21.<br>
-  The routing table of R2 gives you the fixed IP of R13 as `141.195.172.62` and as this network only consists of 2 needed IP-addresses we can set the mask of R13 and R21 to `255.255.255.252` in order to make things easier with overlapping IP-addresses.<br>
-  Then this will result in `141.195.172.61` as the address of R21.<br>
-
-
-  In R12 we see the fixed IP, which is `163.166.250.12`, so this needs to be put into the routing table of the Internet.<br>
-
-
-  Now to set up the connection of D1 and R23.<br>
-  First, set the mask of R23, since the mask of D1 is fixed to `255.255.255.240`.<br>
-  Then put in 2 IP-addresses which are part of the same network intoR23 and D1, I decided to use the lowest subnet of the mask, since it is a not used IP-range yet, which is `141.195.172.1 - 141.195.172.14`.<br>
-  So IP of R23 will be `141.195.172.1` and of D1 will be `141.195.172.2`.<br>
-
-
-  For the network between R22 and C1 we are free to choose any mask we want. In order to make it as easy as possible I set it to `255.255.255.252`, because I only need 2 usable IP-addresses. After that I then choose a free range for my IP's.<br>
-  In this case I did choose the next free one after the network of R23 and D1, which will be `141.195.172.17 - 141.195.172.18`.<br>
-
-
-  Last thing to do is to set all the routing tables accordingly.<br>
-  For C and D it's easy, both use `default` or `0.0.0.0/0` as a **destination** and the IP of the Interface of R2 they are directly connected to as **next hop**.<br>
-
-  For the routing table of R1 it is a little harder.<br>
-  Even though it would, for Net_Practice, work to just set the **destination** to `default` and get away with it just working, there is no way this should work as easily as this.<br>
-  Because that would result in the routing table having 2 default destinations which lead to a different **next hop**, which if you think about doesn't make any sense, because the router would have no way of knowing which default to use.
-
-
-  To make it more sensible, the destination needs to be set to a value that leads to R2 and can go either way, to D1 and to C1.<br>
-  Because we used the lowest two IP-ranges for the two target networks, that need to be reached, the **destination** will be `141.195.172.0/27` the IP adress is of the network, that we want to reach and the CIDR will just define that the first 27 bits of the IP have to be `141.195.172`, so it will be able to communicate with IP's ranging from `141.195.172.0` to `141.195.172.255`.
-
 </details>
 
 ---
@@ -364,84 +259,9 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 <details>
   <summary>show</summary>
+<img width="1433" alt="level9" src="https://github.com/siiine-764/Net_Practice/assets/80540449/a6a8b86d-ce56-4e64-8c67-ba73df955fcf">
 
-  <img width="1202" alt="Level_9" src="https://github.com/siiine-764/Net_Practice/assets/80540449/02788c38-03a8-479e-b2f6-a4e149eafa23">
   <br>
-  In Level 9 we encounter another weakness of the project. The router is not doing any IP-translation when a computer reaches out to the internet.<br>
-  This can be seen by trying to connect C to the internet.
-
-
-  First we set the ,mask of R22 and C1 to `255.255.255.252`, in order to block as little IP's as possible.<br>
-  Now you have to decide on which IP-range to use for this network. I decided on the top-end, with the usable IP-addresses beeing `10.0.0.253` and `10.0.0.254`.<br>
-  Now set the **next hop** in the routing table of C to the IP of R22.<br>
-  Now change the routing table of R1, R2 and the Internet to make it work, as you learned before.
-
-
-  If you now hit the `check again` button, it will show you `Goal 6 : cation need to communicate with Internet - Status : KO - No reverse way, try again ...` for this demonstration we will just ignore all of the other goals.<br>
-  Now you can see at the small red box at the 
-bottom right corner:
-
-  ```
-  ******* Goal ID 6 ********
-  forward way : C -> I (163.172.250.1)
-  on C : packet accepted
-  on C : destination does not match any interface. pass through routing table
-  on C : route match 0.0.0.0/0
-  on C : send to gateway 10.0.0.254 through interface C1
-  on R2 : packet accepted
-  on R2 : destination does not match any interface. pass through routing table
-  on R2 : route match 0.0.0.0/0
-  on R2 : send to gateway 50.165.17.254 through interface R21
-  on R1 : packet accepted
-  on R1 : send to R12
-  on I : packet accepted
-  on I : destination reached
-  reverse way : I -> C (10.0.0.253)
-  on I : packet accepted
-  private subnets not routed over internet
-  ```
-
-  From this we can see, the package from C reaches the Internet, but since the router only attached the private IP of C1 without translating it to a public IP, the Internet can't send any package back to a private IP.<br>
-
-
-  All we have to do now to make it work, is to change every apperance of our `10.0.0.x` address to `9.0.0.x`.<br>
-  Once you have done that you are greeted with <br>`Goal 6 : cation need to communicate with Internet - Status : OK - Congratulations !!`
-
-
-  So, for Net_Practice, a network can't have any IP which is part of a private Network, as soon as it will need connection to the Internet.
-
-
-  Now, all that is left is to solve the remaining 5 Goals.
-
-
-  3 Goals will be solved by creating the A-B-R11 network first, then connecting it to the Internet.<br>
-  First, the mask of R11 is fixed, so set the same for B1 and A1.<br>
-  Second, this network can not use private IP-addresses, so get rid of them.<br>
-  Third, set the routing tables of A and B so they can reach R11.<br>
-  Fourth, set the network address combined with the mask as a **destination** in the routing table of the internet.<br>
-  In my case this was `106.198.154.0/25`.<br>
-
-
-  The last two goals are depending on D to work.<br>
-  As you can see in the routing table of D, the **next hop** is fixed, so put the same IP into R23.<br>
-  The **destination** can be set to `default` or `0.0.0.0/0`.<br>
-  Since the mask of that network is fixed as well, set it accordingly.
-
-
-  Now, if we didn't forget anything, all that should be left, is to fix the routing table of R1.<br>
-  For this you need the network-address of the R23-D1 network.<br>
-  You can find this with the same logic, as before by just extending the [table](https://github.com/siine-764/Net_Practice#masks) above.<br>
-  With this you will be able to find out that the mask `/18` divides our IP-range into 4 subnets:
-
-
-  - `63.239.0.0 - 63.239.63.255`
-  - `63.239.64.0 - 63.239.127.255`
-  - `63.239.128.0 - 63.239.191.255`
-  - `63.239.192.0 - 63.239.255.255`
-
-
-Our fixed IP is part of `63.239.64.0 - 63.239.127.255`, so the network-address is `63.239.64.0`, combine this with our mask of `/18` and you have the missing **destination** of our routing table, `63.239.64.0/18`.
-
 </details>
 
 ---
@@ -452,37 +272,6 @@ Our fixed IP is part of `63.239.64.0 - 63.239.127.255`, so the network-address i
   <summary>show</summary>
   <img width="1241" alt="Level_10" src="https://github.com/siiine-764/Net_Practice/assets/80540449/60c92079-f284-471c-b3dc-db8f27961caf">
   <br>
-  
-  The easiest part will be the connection of H2 and H1 in their network.<br>
-  The mask of this network is fixed by R11, set the masks of H21 and H11 accordingly.<br>
-  Set the IP of H21 to match the rest of the network, it can be in the range of `158.103.36.3 - 158.103.36.126`.<br>
-
-  Now we are setting up the H41-R23 network and its connection to the Internet.<br>
-  The mask is fixed, so set it accordingly.<br>
-  The IP of R23 is fixed by the routing table of H4, so set it to the correct one.<br>
-  Now go along the route connecting it to the Internet, you will notice the mask of R21 is fixed so set the mask of R13 accordingly.<br>
-  The routing table of R1 already has the default set, as a connection to the internet.<br>
-  So now the package should be able to reach the Internet and only thing to fix is the routing table of the Internet.<br>
-  For this to be correct we only need to change the CIDR of the **destination**, so it is able to communicate with all `158.103.36.x` addresses.<br>
-  This is done by changing the CIDR to `/24`, so it can reach `158.103.36.0 - 158.103.36.255`.<br>
-
-
-  The hardest part of this level will now be the setup of the R22-H31 network and the correct setup of the routing table of R1.<br>
-  First, set the mask of R22 and H31 to `255.255.255.252` since we only need 2 usable IP-addresses and this creates the least problems with overlapping ip-ranges.<br>
-  Second, you need an IP-range that is still free. For this, we will take a look at all of the other networks.<br>
-
-
-  - `150.152.40.0 - 150.152.40.127` is taken by R11-H21-H11
-  - `150.152.40.128 - 150.152.40.191` is taken by R23-H41
-  - `150.152.40.252 - 150.152.40.255` is taken by R13-R21
-
-
-  So my decision was to take the next free part after `150.152.40.128 - 150.152.40.191`, which with the `/30` mask will be `150.152.40.192 - 150.152.40.195`.<br>
-  Set the addresses accordingly to the usable ones of the range, you decided on.<br>
-
-
-  Lastly, for the routing table of R1 we need the network-address of the R22-H31 network, which in my case is `150.152.40.192/` and it's mask, which is `/30`, set the **destination** accordingly.<br>
-
 </details>
 
 
