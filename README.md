@@ -1,5 +1,7 @@
 # Net_Practice
-![NetPractice](https://github.com/siiine-764/Net_Practice/assets/80540449/4d902fe8-d2fe-4216-86ce-95f973eae53a)
+
+![NetPractice](https://github.com/siiine-764/Net_Practice/assets/80540449/d587216a-eacc-4df2-8c68-827e12ba92eb)
+
 
 ## Contents
 - [Basics](https://github.com/siiine-764/Net_Practice#basics)
@@ -99,8 +101,8 @@ i.e. for mask `255.255.255.252`:<br>
 network: `190.3.2.252`<br>
 broadcast: `190.3.2.255`<br>
 usable IP's: `190.3.2.253`, `190.3.2.254`
+![subnet-mask-catharsis](https://github.com/siiine-764/Net_Practice/assets/80540449/45457891-7395-48a2-8747-1259d304885f)
 
-![subnet-mask-catharsis](https://github.com/siiine-764/Net_Practice/assets/80540449/62e68023-7584-4149-b8e4-0ef30b694752)
 
 - Why does IPv4 need a netmask?
 
@@ -119,7 +121,7 @@ usable IP's: `190.3.2.253`, `190.3.2.254`
 A switch will enable you to connect more than two devices to the same network.<br>
 Its only purpose is to distribute packages to its network.<br>
 To see a working example, you can take a look at <br>
-<img width="100%" alt="Level_3" src="https://github.com/siiine-764/Net_Practice/assets/80540449/7041b06d-2dc8-454b-b91d-528dac56fb18">
+<img width="1138" alt="level3" src="https://github.com/siiine-764/Net_Practice/assets/80540449/45396dc4-edfa-496a-bb0c-6735e1882461">
 
 ## Routers
 (rule routers : control workflow between tasks in a process)
@@ -177,7 +179,8 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 <details>
   <summary>show</summary>
-<img width="100%" alt="level1" src="https://github.com/siiine-764/Net_Practice/assets/80540449/62777f3a-225e-447a-8a28-ef3a513f4c13">
+  <img width="1186" alt="level1" src="https://github.com/siiine-764/Net_Practice/assets/80540449/dcc66543-f139-4a59-8fe9-42c6f33cbd46">
+
   <br>
 </details>
 
@@ -187,7 +190,8 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 <details>
   <summary>show</summary>
-  <img width="100%" alt="level2" src="https://github.com/siiine-764/Net_Practice/assets/80540449/9350781a-eecc-4c1c-ae7c-db2524389309">
+  <img width="1023" alt="level2" src="https://github.com/siiine-764/Net_Practice/assets/80540449/8977a5c7-03c5-4580-aeb5-1c7c896ba54b">
+
   <br>
 </details>
 
@@ -197,7 +201,9 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 <details>
   <summary>show</summary>
-  <img width="100%" alt="level3" src="https://github.com/siiine-764/Net_Practice/assets/80540449/96308c9f-ac62-438d-88a5-fe8659182225">
+<img width="1138" alt="level3" src="https://github.com/siiine-764/Net_Practice/assets/80540449/45396dc4-edfa-496a-bb0c-6735e1882461">
+
+  
   <br>
 </details>
 
@@ -208,7 +214,8 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 <details>
   <summary>show</summary>
-  <img width="100%" alt="level4" src="https://github.com/siiine-764/Net_Practice/assets/80540449/cb2ec85a-6186-4a0c-bf0a-f93ea4300b8b">
+  <img width="1254" alt="level4" src="https://github.com/siiine-764/Net_Practice/assets/80540449/2448771e-cc56-4806-a042-d8d3b97a4aa9">
+
   <br>
 </details>
 
@@ -218,7 +225,10 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 <details>
   <summary>show</summary>
-  <img width="100%" alt="level5" src="https://github.com/siiine-764/Net_Practice/assets/80540449/fb248687-4a69-4950-8721-47a10c24efc9">
+
+<img width="1395" alt="level5" src="https://github.com/siiine-764/Net_Practice/assets/80540449/3b3daca8-9060-466f-82cd-d8648904d3ac">
+
+  
   <br>
 </details>
 
@@ -228,7 +238,8 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 <details>
   <summary>show</summary>
-  <img width="100%" alt="level6" src="https://github.com/siiine-764/Net_Practice/assets/80540449/5950a027-7073-450d-addd-7d2833124573">
+  <img width="1478" alt="level6" src="https://github.com/siiine-764/Net_Practice/assets/80540449/d9cc44b4-3493-4a1d-a6e6-b69907ecec97">
+
   <br>
 </details>
 
@@ -238,7 +249,9 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 <details>
   <summary>show</summary>
-<img width="100%" alt="level7" src="https://github.com/siiine-764/Net_Practice/assets/80540449/170a12fa-0c76-4302-8f71-5eed221b0032">
+
+  <img width="1617" alt="level7" src="https://github.com/siiine-764/Net_Practice/assets/80540449/97755354-a42c-40d0-a65a-c19136771135">
+
   <br>
 </details>
 
@@ -249,7 +262,9 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 <details>
   <summary>show</summary>
-  <img width="1508" alt="level8" src="https://github.com/siiine-764/Net_Practice/assets/80540449/0f59d9be-eca9-491b-9de1-6e9c3dbf2551">
+<img width="1508" alt="level8" src="https://github.com/siiine-764/Net_Practice/assets/80540449/210ef20c-0b83-40e8-afd1-cb41e3945112">
+
+  
   <br>
 </details>
 
@@ -259,7 +274,9 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 <details>
   <summary>show</summary>
-<img width="1433" alt="level9" src="https://github.com/siiine-764/Net_Practice/assets/80540449/a6a8b86d-ce56-4e64-8c67-ba73df955fcf">
+<img width="1433" alt="level9" src="https://github.com/siiine-764/Net_Practice/assets/80540449/0b4f6269-0b96-4ea0-9edd-2c5155af1095">
+
+  
 
   <br>
 </details>
@@ -270,7 +287,9 @@ Here are all the solutions and explanations for all 10 Levels.<br>
 
 <details>
   <summary>show</summary>
-  <img width="1241" alt="Level_10" src="https://github.com/siiine-764/Net_Practice/assets/80540449/60c92079-f284-471c-b3dc-db8f27961caf">
+<img width="1347" alt="level10" src="https://github.com/siiine-764/Net_Practice/assets/80540449/f9051f87-359b-45e9-b73d-4d2497205a8a">
+
+  
   <br>
 </details>
 
